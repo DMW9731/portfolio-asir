@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Actividad 01 - Primera práctica con Packet Tracer</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="../../../index.html">Inicio</a>
+
+        <a href="../../redes.html">Redes</a>
+
+        <a href="../../../index.html#asignaturas">Asignaturas</a>
+
+        <a href="../../../index.html#sobre-mi">Sobre mí</a>
+
+        <a href="../../../index.html#contacto">Contacto</a>
+
+    </nav>
+
+
+    <main>
+
+        <section>
+
+            <p>
+                Planificación y Administración de Redes
+            </p>
+
+            <h1>
+                Primera práctica con Packet Tracer
+            </h1>
+
+            <p>
+                Primera actividad realizada en la asignatura de
+                Planificación y Administración de Redes.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Información</h2>
+
+            <p>
+                <strong>Asignatura:</strong>
+                Planificación y Administración de Redes
+            </p>
+
+            <p>
+                <strong>Tipo:</strong>
+                Práctica con simulador
+            </p>
+
+            <p>
+                <strong>Estado:</strong>
+                terminado
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Objetivo</h2>
+
+            <p>
+                Familiarizarse con el simulador Cisco Packet Tracer
+                mediante la creación de un escenario básico compuesto
+                por dos equipos PC y un switch. Configurar direcciones
+                IP estáticas en ambos equipos y comprobar la
+                comunicación entre ellos mediante el envío de paquetes
+                ICMP (ping) y ARP, analizando el recorrido de los
+                paquetes a través de los distintos dispositivos de la
+                red.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Contenido</h2>
+
+            <h3>Creación del escenario en Packet Tracer</h3>
+
+            <p>
+                Se añade al espacio de trabajo un switch modelo 2960 y
+                dos equipos PC, conectándolos mediante cables Ethernet
+                directos. Se comprueba que los enlaces se activan
+                correctamente (triángulos verdes) tras unos segundos.
+            </p>
+
+
+            <h3>Configuración de direcciones IP</h3>
+
+            <p>
+                En el primer PC se configura el adaptador FastEthernet0
+                con la dirección IP estática 172.16.14.108/16, y en el
+                segundo PC la dirección 172.16.14.100/16. No es
+                necesario configurar puerta de enlace ni servidor DNS.
+            </p>
+
+
+            <h3>Simulación de la comunicación</h3>
+
+            <p>
+                Se utiliza el modo <em>Simulation</em> de Packet Tracer
+                para observar el recorrido de los paquetes ARP e ICMP
+                entre los dos PCs a través del switch. Se comprueba que
+                ambos paquetes viajan correctamente de PC1 a PC2 y son
+                devueltos al PC1 con la marca OK.
+            </p>
+
+
+            <h3>Análisis de los paquetes</h3>
+
+            <p>
+                Mediante los controles de simulación se analizan las
+                cabeceras de los paquetes, revisando tanto el modelo
+                OSI como el detalle de los PDU salientes (direcciones
+                MAC, IP, tipo de protocolo, etc.).
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Lo que he aprendido</h2>
+
+            <p>
+                He aprendido a crear un escenario básico de red en
+                Cisco Packet Tracer, a conectar dispositivos mediante
+                cables Ethernet y a configurar direcciones IP estáticas
+                en los equipos. También he comprendido cómo funciona el
+                modo Simulation, que permite analizar el recorrido de
+                los paquetes a través de la red y examinar sus
+                cabeceras en los diferentes niveles del modelo OSI.
+                Además, he comprobado cómo se produce la resolución de
+                direcciones MAC mediante ARP antes de que un ping
+                (ICMP) pueda realizarse con éxito entre dos equipos.
+            </p>
+
+        </section>
+
+               <section>
+
+            <h2>Documentación ampliada</h2>
+
+            <p>
+                A continuación puedes consultar la documentación
+                asociada a esta actividad: la guía con el enunciado
+                y los pasos a seguir, y la memoria con el desarrollo
+                completo de la práctica.
+            </p>
+
+
+            <h3>📘 Guía de la actividad</h3>
+
+            <p>
+                Documento con el enunciado y los pasos a seguir para
+                la realización de la práctica en Cisco Packet Tracer.
+            </p>
+
+            <iframe
+                src="actividad-01/docs/actividad-guiada.pdf"
+                width="100%"
+                height="600"
+                title="Guía de la actividad">
+            </iframe>
+
+            <p>
+                <a href="actividad-01/docs/actividad-guiada.pdf" target="_blank">
+                    📄 Abrir guía en una pestaña nueva
+                </a>
+            </p>
+
+
+            <h3>📗 Memoria de la actividad</h3>
+
+            <p>
+                Documento con el desarrollo de la práctica, las
+                capturas de pantalla de cada paso y las conclusiones
+                obtenidas.
+            </p>
+
+            <iframe
+                src="actividad-01/docs/actividad-01.pdf"
+                width="100%"
+                height="600"
+                title="Memoria de la actividad">
+            </iframe>
+
+            <p>
+                <a href="actividad-01/docs/actividad-01.pdf" target="_blank">
+                    📄 Abrir memoria en una pestaña nueva
+                </a>
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Guillermo · Portfolio ASIR
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
